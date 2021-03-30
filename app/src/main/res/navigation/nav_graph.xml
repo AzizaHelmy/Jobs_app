@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/startFragment">
 
     <fragment
         android:id="@+id/homeFragment"
@@ -19,4 +19,13 @@
         android:name="com.example.jobsapp.ui.fragments.DetailsFragment"
         android:label="fragment_details"
         tools:layout="@layout/fragment_details" />
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.jobsapp.ui.fragments.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>

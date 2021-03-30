@@ -1,10 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#4A4747"
     tools:context=".ui.fragments.DetailsFragment">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:elevation="13dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/logo_iv"
+                        android:layout_width="99dp"
+                        android:layout_height="99dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="7dp"
+                        android:src="@drawable/compony"
+                        app:civ_border_color="#FF000000"
+                        app:civ_border_width="2dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Senior Software Engineer"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold|italic"
+                        app:layout_constraintEnd_toEndOf="@id/logo_iv"
+                        app:layout_constraintStart_toStartOf="@id/logo_iv"
+                        app:layout_constraintTop_toBottomOf="@id/logo_iv" />
+
+                    <TextView
+                        android:id="@+id/type_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="full time"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="@id/title_tv"
+                        app:layout_constraintStart_toStartOf="@id/title_tv"
+                        app:layout_constraintTop_toBottomOf="@id/title_tv" />
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@color/black"
+                        app:layout_constraintTop_toBottomOf="@id/type_tv" />
+
+                    <TextView
+                        android:id="@+id/name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        android:text="Google"
+                        android:textSize="21sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/view" />
+
+                    <TextView
+                        android:id="@+id/compeny_url_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        android:textColor="@color/purple_700"
+                        android:text="https://wavesense.io/"
+                        android:textSize="21sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/view" />
+
+                    <TextView
+                        android:id="@+id/description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        android:text="any descrition"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/name_tv" />
+
+                    <TextView
+                        android:id="@+id/url_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        android:layout_marginBottom="57dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/purple_700"
+                        android:text="https://jobs.github.com/positions/da6ce5fe-3116-43cd-bba8-a62623c7faf2"
+                        android:textSize="17sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/description"
+                        app:layout_constraintTop_toBottomOf="@id/description" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

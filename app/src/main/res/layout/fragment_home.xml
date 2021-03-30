@@ -7,7 +7,7 @@
     tools:context=".ui.fragments.HomeFragment">
     <androidx.recyclerview.widget.RecyclerView
         android:layout_margin="3dp"
-        android:id="@+id/person_rv"
+        android:id="@+id/jobs_rv"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
