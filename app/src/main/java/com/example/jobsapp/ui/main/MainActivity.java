@@ -1,4 +1,4 @@
-package com.example.jobsapp.ui;
+package com.example.jobsapp.ui.main;
 
 import android.content.Intent;
 import android.os.Bundle;

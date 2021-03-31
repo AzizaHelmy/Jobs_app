@@ -44,7 +44,7 @@ public class JobsAdapter extends RecyclerView.Adapter<JobsAdapter.JobsViewHolder
         JobsModel model = jobsModelList.get(position);
         holder.name.setText(model.getCompanyName());
         holder.title.setText(model.getTitle());
-       // holder.logo.setImageResource(model.);
+        //holder.logo.setImageResource(model.);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
